@@ -1,135 +1,171 @@
-# Servo Control Projects
+# 🤖 Robotic Servo Control Projects
 
 <p align="center">
-  <img src="https://readme-raw.githubusercontent.com/yourusername/yourrepo/main/assets/team-raw-stm-blue.svg" alt="TEAM RAW STM SERVO PROJECTS" width="600"/>
+  <strong>STM32-based servo control experiments and robotic mechanism prototypes developed using embedded C, UART communication, and controller-based interfaces.</strong>
 </p>
 
-## Overview
-This repository contains multiple STM32-based servo control projects using the STM32F103 microcontroller. These projects demonstrate various approaches to controlling servos through different interfaces including UART, PS4 controllers, and integrated systems.
-
-## Projects Included
-
-### 1. SERVO_UART
-**Single Servo Control via UART**
-- Simple implementation for controlling one servo via UART communication
-- Ideal for beginners learning embedded servo control
-- Clean, modular code structure
-
-### 2. MULTI_SERVO_UART
-**Multi-Servo Control via UART**
-- Controls multiple servos through a single UART interface
-- Modular code design with HAL libraries
-- Easily extendable for more servos
-- Real-time servo management in embedded systems
-
-### 3. PS4_SERVO_CONTROLLED
-**PS4 Controller Servo Control**
-- Control servos using a PlayStation 4 controller
-- Interfaced via ESP receiver and STM32F103 microcontroller
-- Real-time servo control with UART-based communication
-- Perfect for remote robotic or automation projects
-
-### 4. PS4_PICKING_MECHANISM_CONTROLLED
-**PS4 Controller Picking Mechanism**
-- Specialized implementation for picking mechanisms using PS4 controller
-- Uses ESP receiver for controller data transmission
-- Complete servo mapping and actuation system
-
-### 5. SERVO_WORK_MODE
-**Multiple Servo Work Modes**
-- Explores different working modes for servo control
-- Modular code for easy extension and experimentation
-- Example implementations for position, speed, and sequence modes
-
-### 6. SERVO_STEPPER_INTEGRATION
-**Servo and Stepper Motor Integration**
-- Combines servo and stepper motor control in one system
-- Demonstrates integration of different motor types
-- Advanced control techniques for mixed motor systems
-
-### 7. PS4_SERVO_STEPPER_CTRL
-**PS4 Controller with Servo & Stepper Control**
-- Full implementation using PS4 controller for both servo and stepper motors
-- Dual motor control via single controller interface
-- Complex control system demonstration
-
-### 8. PS4_SERVO_STEPPER_LOCO_CONTROLLED
-**PS4 Controller Locomotion Control**
-- Specialized locomotion control using PS4 controller
-- Integration of servos and steppers for movement systems
-- Advanced robotics control approach
-
-### 9. R1_PICKING_MECHANISM
-**R1 Picking Mechanism Control**
-- Specific implementation for R1 picking mechanisms
-- Designed for industrial or robotic picking applications
-
-### 10. SERVO_ANGLE_CONTROL
-**Servo Angle Control System**
-- Precise angle control for servos
-- Advanced positioning algorithms
-- Calibration and control optimization
-
-### 11. SERVO_ANGLE_CONTROL
-**SERVO_ANGLE_CONTROL**
-- Fine-grained servo angle control implementation
-- Advanced positioning capabilities
-
-### 12. STM_F4
-**STM32F4 Based Projects**
-- Projects designed for STM32F4 microcontroller series
-- More powerful processor with enhanced capabilities
-- Different peripheral configurations and features
-
-## Getting Started
-
-All projects are built using STM32CubeIDE and use HAL libraries. To get started:
-
-1. Open the desired project in STM32CubeIDE
-2. Configure your hardware peripherals (UART, timers, etc.)
-3. Build and flash to your STM32 board
-4. Follow specific instructions in each project's README for usage
-
-## Demo Videos
-
-<!-- YouTube Embed (recommended for GitHub) -->
-[![Watch the demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
-
-<!-- Alternative: Direct video link (works on some platforms, not GitHub) -->
-<!--
-<video width="600" controls>
-  <source src="path_or_url_to_your_video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
--->
-
-> **Note:** GitHub markdown does not support direct video embedding. For local or direct-link videos, use the HTML `<video>` tag as shown above, but it will only work on platforms that support HTML in markdown rendering (not on GitHub.com). For best compatibility, upload your video to YouTube or another video hosting service and use the thumbnail link method above.
-
-## Features
-
-- Modular, easy-to-understand code
-- UART-based communication protocols
-- Real-time servo control capabilities
-- Support for multiple servo configurations
-- Extensible architectures for custom implementations
-- Integration with PS4 controllers via ESP receivers
-- Advanced control modes and work patterns
-
-## Requirements
-
-- STM32CubeIDE (for building projects)
-- STM32F103 or STM32F4 microcontroller board
-- Servo motors (standard 180° or continuous rotation)
-- ESP8266/ESP32 receiver for PS4 controller projects
-- Basic understanding of embedded C programming
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+<p align="center">
+  <img src="https://img.shields.io/badge/STM32F103-03234B?style=flat-square&logo=stmicroelectronics&logoColor=white" alt="STM32F103"/>
+  <img src="https://img.shields.io/badge/STM32F4-03234B?style=flat-square&logo=stmicroelectronics&logoColor=white" alt="STM32F4"/>
+  <img src="https://img.shields.io/badge/STM32CubeIDE-03234B?style=flat-square&logo=stmicroelectronics&logoColor=white" alt="STM32CubeIDE"/>
+  <img src="https://img.shields.io/badge/Embedded_C-00599C?style=flat-square&logo=c&logoColor=white" alt="Embedded C"/>
+</p>
 
 ---
-**TEAM RAW STM**
+
+## 🎥 Demonstration
+
+<p align="center">
+  <a href="YOUR_YOUTUBE_URL">
+    <img src="YOUR_VIDEO_THUMBNAIL_URL"
+         width="800"
+         alt="Robotic Servo Control Demonstration">
+  </a>
+</p>
+
+<p align="center">
+  <i>Demonstration of servo control and robotic mechanism operation.</i>
+</p>
+
+---
+
+## 🧭 Overview
+
+This repository contains a collection of STM32-based servo and motor-control projects developed while experimenting with embedded robotics and mechanism control.
+
+The projects progress from basic UART-based servo control to multi-servo systems, PS4 controller interfaces, picking mechanisms, locomotion control, and servo-stepper integration.
+
+The primary platforms used are **STM32F103** and **STM32F4**, with ESP-based controller interfaces used in several projects.
+
+---
+
+## 🧩 Projects
+
+### 01 · SERVO_UART
+**Single-servo control through UART**
+
+A basic implementation for controlling a servo through UART communication. Serves as a starting point for experimenting with servo commands and embedded communication.
+
+---
+
+### 02 · MULTI_SERVO_UART
+**Multi-servo control through UART**
+
+Extends UART-based control to multiple servos with modular handling and STM32 HAL peripherals.
+
+---
+
+### 03 · PS4_SERVO_CONTROLLED
+**PS4 controller → ESP receiver → STM32 → servo**
+
+A controller-based servo control system using an ESP receiver to transmit PS4 controller input to the STM32.
+
+---
+
+### 04 · PS4_PICKING_MECHANISM_CONTROLLED
+**PS4-controlled robotic picking mechanism**
+
+A servo-control implementation developed for operating a robotic picking mechanism through a PS4 controller interface.
+
+---
+
+### 05 · SERVO_WORK_MODE
+**Servo operating-mode experiments**
+
+Experiments with different servo operating modes and motion patterns for embedded robotic applications.
+
+---
+
+### 06 · SERVO_STEPPER_INTEGRATION
+**Servo + stepper motor integration**
+
+Combines servo and stepper motor control within a single embedded system.
+
+---
+
+### 07 · PS4_SERVO_STEPPER_CTRL
+**PS4-controlled servo and stepper system**
+
+Integrates PS4 controller input with coordinated servo and stepper motor control.
+
+---
+
+### 08 · PS4_SERVO_STEPPER_LOCO_CONTROLLED
+**Controller-based locomotion system**
+
+A locomotion-oriented control implementation combining servo and stepper actuation with PS4 controller input.
+
+---
+
+### 09 · R1_PICKING_MECHANISM
+**R1 robotic picking mechanism**
+
+Control implementation developed around the R1 picking mechanism used in the robotics system.
+
+---
+
+### 10 · SERVO_ANGLE_CONTROL
+**Servo positioning and angle control**
+
+Experiments focused on precise servo positioning, angle control, and calibration.
+
+---
+
+### 11 · STM_F4
+**STM32F4-based control experiments**
+
+Embedded control projects developed on the STM32F4 platform, exploring the capabilities of a more powerful STM32 family compared with the STM32F103 projects.
+
+---
+
+## ⚙️ Technical Areas
+
+### Embedded Control
+
+- STM32F103
+- STM32F4
+- STM32 HAL
+- STM32CubeIDE
+- Embedded C
+- UART communication
+- Timer/peripheral configuration
+
+### Motion Control
+
+- Servo control
+- Multi-servo coordination
+- Servo positioning
+- Stepper motor control
+- Servo + stepper integration
+- Robotic mechanism actuation
+
+### Human-Machine Interfaces
+
+- PS4 controller input
+- ESP-based receiver interfaces
+- UART-based communication between controllers and STM32
+
+---
+
+## 🔌 Typical Control Architecture
+
+Several controller-based projects follow a structure similar to:
+
+```text
+      PS4 Controller
+            │
+            ▼
+      ESP Receiver
+            │
+           UART
+            │
+            ▼
+        STM32 MCU
+            │
+      ┌─────┴─────┐
+      ▼           ▼
+   Servos      Steppers
+      │           │
+      └─────┬─────┘
+            ▼
+      Robotic Mechanism
